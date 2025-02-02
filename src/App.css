@@ -30,10 +30,39 @@
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
+  
+}
+
+.submitBtn {
   cursor: pointer;
 }
 
-.submit-btn {
+.signIn {
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 10px;
+  margin-right: 5px;
+  background-color: #eb1700;
+  color: white;
+  transition: backgroud-color 0.15s ease-in-out;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+.signIn:focus {
+  outline: 2px solid rgba(0, 0, 0, 0.5); /* Soft white outline */
+  outline-offset: 2px;
+}
+
+.signUp {
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 10px;
+  font-weight: 800;
+  margin-right: 5px;
+  border: none;
   cursor: pointer;
 }

@@ -1,19 +1,12 @@
-import DDlogo from './DDlogo.svg';
+// import arrowsubmit from './arrowlogo.svg'
 import './App.css';
 
 function App() {
   return (
       <div>
-        <div className="navBar">
-          <img src={DDlogo} className="logo" alt="logo" />
-          <div className='buttons'>
-            <button>Log in</button>
-            <button>sign up</button>
-          </div>
-        </div>
-        
-       <MainSearch />
-        
+        <NavBar />
+        <MainSearch />
+
       </div>
   );
 }
@@ -22,8 +15,21 @@ function SearchBar() {
   return (
       <div className="searchBar">
         <input placeholder = "Enter Delivery Address" className='search'/>
-        <input type='submit' className="submit-btn"/>
+        <input type='submit' className="submiBtn"/>
       </div>
+  );
+}
+
+function NavBar() {
+  return (
+    <div className="navBar">
+        
+        {/* <img src={DDlogo} className="logo" alt="logo" /> */}
+        <div className='buttons'>
+          <button className='signIn'>Sign In</button>
+          <button className='signUp'>Sign Up</button>
+        </div>
+    </div>
   );
 }
 
@@ -37,5 +43,6 @@ function MainSearch() {
   </div>
   )
 }
+
 
 export default App;
