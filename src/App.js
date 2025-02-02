@@ -1,13 +1,46 @@
 // import arrowsubmit from './arrowlogo.svg'
+import person from './person.svg'
 import './App.css';
 
 function App() {
   return (
+    <span>
+    <div className='welcomeSection'>
       <div>
         <NavBar />
         <MainSearch />
-
+        <SavedAddress />
       </div>
+    </div>
+    <div className='section2'>
+      <div className='section2TopPart'>
+        <div>
+          <img src='https://cdn.doordash.com/media/consumer/home/landing/new/ScootScoot.svg' alt='scootPic'/>
+          <h2 className='titleText'>Become a Dasher</h2>
+          <p>As a delivery driver, make money and work on your schedule. Sign up in minutes.</p>
+          <a href="www.doordash.com" >Start earning</a>
+        </div>
+        <div>
+          <img src="https://cdn.doordash.com/media/consumer/home/landing/new/Storefront.svg" alt='storeFront'/>
+          <h2 className='titleText'>Become a Merchant</h2>
+          <p>Attract new customers and grow sales, starting with 0% commissions for up to 30 days.</p>
+          <a href="www.doordash.com" >Sign up for doordash</a>
+        </div>
+        <div>
+          <img src='https://cdn.doordash.com/media/consumer/home/landing/new/iphone.svg' alt='iphone'/>
+          <h2 className='titleText'>Get the best DoorDash experience</h2>
+          <p>Experience the best your neighborhood has to offer, all in one app.</p>
+          <a href="www.doordash.com">Get the app</a>
+        </div>
+      </div>
+      <div>
+        <h2 className='titleText'>Everything you crave, delivered.</h2>
+        <h3>Your favorite local restaurants</h3>
+        <p>Get a slice of pizza or the whole pie delivered, or pick up house lo mein from the Chinese takeout spot you've been meaning to try.</p>
+        <button href="www.doordash.com" className='button redBtn'>Find restaurants</button>
+      </div>
+    </div>
+    </span>
   );
 }
 
@@ -15,7 +48,7 @@ function SearchBar() {
   return (
       <div className="searchBar">
         <input placeholder = "Enter Delivery Address" className='search'/>
-        <input type='submit' className="submiBtn"/>
+        <input type='submit' className="submitBtn"/>
       </div>
   );
 }
@@ -26,8 +59,8 @@ function NavBar() {
         
         {/* <img src={DDlogo} className="logo" alt="logo" /> */}
         <div className='buttons'>
-          <button className='signIn'>Sign In</button>
-          <button className='signUp'>Sign Up</button>
+          <button className='button signIn'>Sign In</button>
+          <button className='button whiteBtn '>Sign Up</button>
         </div>
     </div>
   );
@@ -41,6 +74,17 @@ function MainSearch() {
       <SearchBar />
     </form>
   </div>
+  )
+}
+
+function SavedAddress() {
+  return (
+    <div className='savedAddress'>
+      <button type='submit' className='button whiteBtn'>
+          <img src={person} alt="logo" />
+          Sign in for saved address
+      </button>
+    </div>
   )
 }
 
