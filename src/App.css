@@ -35,6 +35,10 @@
   
 }
 
+.section2Layout {
+  max-width: 200px;
+}
+
 .submitBtn {
   cursor: pointer;
   border-radius: 20px;
@@ -72,7 +76,7 @@
   color: white;
   background-color: #b81301;
 }
-
+/* 
 .signUp {
   border-radius: 20px;
   font-size: 15px;
@@ -82,7 +86,7 @@
   border: none;
   cursor: pointer;
   background-color: white;
-}
+} */
 
 .welcomeSection {
   background-color: #db2e02;
@@ -108,19 +112,41 @@ h1 {
   color: white;
 }
 .titleText {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .section2 {
   padding-top: 100px;
-  max-width: 768px;
+  max-width: 1200px;
   margin: 0px auto;
 
 }
-.section2TopPart{
-  display: flex;
-  gap: 30px;
+
+@media (min-width: 768px)  {
+  .section2TopPart{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    text-align: center;
+    margin-bottom: 90px;
+  }
+  
+  .section2BottomPart {
+    padding: 20px;
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+    h2 {
+      font-size: 40px;
+    }
+  }
+  .section2BottomText{
+    max-width: 350px;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 }
+
 
 a {
   text-decoration: none;
@@ -132,7 +158,13 @@ a {
 a:visited {
   text-decoration: none ;
 }
+  
 
 .phoneImage {
-  size: 200px;
+  height: 168px;
+  width: 168px;
 }
+
+/* PROBLEM FOR LATER AFTER YOU THROW EVERYTHING ON THE SCREEN:
+  Figure out how to use media queries depending on the size of the 
+ */
