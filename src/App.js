@@ -162,7 +162,7 @@ function Sec2Card({headingText, bodyText, linkText, imgAlt, imgSrc}) {
 
 function Section4() {
   return (
-    <div className='section4'>
+    <div className='welcomeSection sec4BackgroundImage section4'>
       <div className='section4Text'>
         <h2> 
           Get grocery and convenience store essentials 

@@ -98,8 +98,12 @@
 } */
 
 .welcomeSection {
-  background-color: #db2e02;
-  padding-bottom: 350px;
+  background-image: url("https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_desktop.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 400px;
+  /* margin-left: 50px; */
 }
 
 .savedAddress {
@@ -196,18 +200,29 @@ a:visited {
  */
 
  .section4 {
-    max-width: 550px;
- }
-
- .section4Text {
-    /* color: white; */
-    /* margin-top: auto;
-    margin-bottom: auto; */
+    /* max-width: 550px; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    
+    
  }
+
+.sec4BackgroundImage {
+  background-image: url("https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/grocery_desktop.png") center ;
+  padding-bottom: 400px;
+  background-size: cover;
+  filter: brightness(20%);
+}
+ .section4Text {
+    color: white; 
+    justify-content: center;
+    gap: 20px;
+    max-width: 550px;
+    filter: brightness(100%);
+    
+ }
+
 
 .section6Imgs {
   height: 35%;
