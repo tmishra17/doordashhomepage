@@ -73,10 +73,18 @@
   color: white;
   background-color: #e01902;
 }
+.redBtn:hover {
+  background-color: #d61500;
+}
 
 .signIn {
   color: white;
-  background-color: #b81301;
+  background-color: #e11700;
+  transition: ease-in-out .15s;
+}
+
+.signIn:hover {
+  background-color: #af1200;
 }
 .savedAddressBtn {
   display: flex;
@@ -103,6 +111,9 @@
   background-position: center;
   background-repeat: no-repeat;
   padding-bottom: 400px;
+  h1 {
+    color: white;
+  }
   /* margin-left: 50px; */
 }
 
@@ -121,9 +132,7 @@
 } 
  */
 
-h1 {
-  color: white;
-}
+
 .titleText {
   font-size: 30px;
 }
@@ -224,6 +233,21 @@ a:visited {
  }
 
 
+.section5 {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  gap: 90px;
+
+}
+.section5Text {
+  margin-bottom: auto;
+  margin-top: auto;
+  max-width: 400px;
+  h1 {
+    font-size: 45px;
+  }
+}
 .section6Imgs {
   height: 35%;
   width: 35%;

@@ -188,10 +188,12 @@ function Section2() {
 
 function Section5() {
   return (
-    <div>
-      <h1>Convenience stores at your doorstep</h1>
-      <p>Stock up on snacks, household essentials, candy, or vitamins — all delivered in under an hour.</p>
-      <Button buttonText="Shop Now"/>
+    <div className='section5'>
+      <div className='section5Text'>
+        <h1>Convenience stores at your doorstep</h1>
+        <p>Stock up on snacks, household essentials, candy, or vitamins — all delivered in under an hour.</p>
+        <Button buttonText="Shop Now"/>
+      </div>
       <img src='https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/convenience_desktop.png' alt='convenience desktop'/>
     </div>
   )
