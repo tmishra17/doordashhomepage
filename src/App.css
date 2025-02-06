@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .searchBar {
@@ -76,6 +78,13 @@
   color: white;
   background-color: #b81301;
 }
+.savedAddressBtn {
+  display: flex;
+  padding: 8px;
+  font-weight: 600;
+  gap: 3px;
+  font-size: small;
+}
 /* 
 .signUp {
   border-radius: 20px;
@@ -90,7 +99,7 @@
 
 .welcomeSection {
   background-color: #db2e02;
-  padding-bottom: 400px;
+  padding-bottom: 350px;
 }
 
 .savedAddress {
@@ -199,3 +208,8 @@ a:visited {
     align-items: center;
     gap: 20px;
  }
+
+.section6Imgs {
+  height: 35%;
+  width: 35%;
+}
